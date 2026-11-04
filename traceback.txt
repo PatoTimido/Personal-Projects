@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/Scripts/AnswerRoute/BurgerRoute.rpy", line 249, in script
+    menu:
+  File "game/Scripts/AnswerRoute/BurgerRoute.rpy", line 252, in <module>
+    "Ask about fire." if ask_fire == False:
+                         ^^^^^^^^          
+NameError: name 'ask_fire' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/Scripts/AnswerRoute/BurgerRoute.rpy", line 249, in script
+    menu:
+  File "renpy/ast.py", line 1815, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+             ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/menuexports.py", line 99, in menu
+    condition = renpy.python.py_eval(condition)
+                ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/Scripts/AnswerRoute/BurgerRoute.rpy", line 252, in <module>
+    "Ask about fire." if ask_fire == False:
+                         ^^^^^^^^          
+NameError: name 'ask_fire' is not defined
+
+macOS-14.5-arm64-arm-64bit arm64
+Ren'Py 8.4.1.25072401
+Limerence 1.0
+Sun Feb  8 18:34:35 2026

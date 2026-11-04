@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Scripts/AnswerRoute/BurgerRoute.rpy", line 279: expected 'simple_expression' not found.
+    show fire_newspaper with with moveinbottom
+                             ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Sun Feb  8 18:58:15 2026
